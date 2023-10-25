@@ -1,0 +1,18 @@
+[
+  {
+    "fromPath": "/blog/weston-autolaunch",
+    "toPath": "/linux/weston-autolaunch"
+  },
+  {
+    "fromPath": "/blog/custom-linux",
+    "toPath": "/linux/custom-linux-distro"
+  },
+  {
+    "fromPath": "/projects/why-am-i-doing-this",
+    "toPath": "/blog/why-am-i-doing-this"
+  },
+  {
+    "fromPath": "/blog/parallel-ssh",
+    "toPath": "/linux/parallel-ssh"
+  }
+]

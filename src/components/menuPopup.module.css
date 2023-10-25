@@ -1,0 +1,104 @@
+.topline {
+  position: sticky;
+  top: 0;
+  z-index: 300;
+  margin: 0;
+  padding: 0;
+  height: 3.2rem;
+  border-bottom: #211a1d solid 0.25rem;
+  background-color: #f2f2f2;
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  font-family: 'Manrope', sans-serif;
+}
+
+.back {
+  position: relative;
+  top: 0.5rem;
+}
+
+.newtag {
+  position: absolute;
+  width: 3rem;
+  transform: rotate(30deg);
+  left: -2rem;
+  margin: 0 auto;
+}
+
+.featuredlink {
+  border-bottom: 1px solid #ddd;
+}
+
+.featuredlink img {
+  display: block;
+}
+
+.featuredspace {
+  width: 7rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.featuredimage {
+  margin: 0 auto;
+  padding: 0.85rem 0;
+}
+
+.menuitem {
+  display: flex;
+  align-items: baseline;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.menuitem h2 {
+  margin: 1rem 0;
+}
+
+.menuitem a {
+  display: block;
+  padding: .7rem 0;
+  margin-left: 2rem;
+  color: #211a1d;
+  text-decoration: none;
+  text-align: start;
+}
+
+.menuitem a:hover {
+  color: #211a1d;
+  text-decoration: none;
+  background-color: #eee;
+}
+
+.menuitem a:focus {
+  text-decoration: none;
+}
+
+.menuitem a:visited {
+  color: #211a1d;
+}
+
+.menuitem p {
+  margin: 0;
+  margin-left: 2rem;
+}
+
+.active-menu-item {
+  background-color: #e8e8f9;
+}
+
+.close {
+  position: fixed;
+  top: 0.2rem;
+  left: 0.5rem;
+  height: 2.6rem;
+  cursor: pointer;
+}
+
+.hint {
+  margin: 3rem 2rem;
+}

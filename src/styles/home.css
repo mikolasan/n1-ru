@@ -1,0 +1,153 @@
+.bottomline {
+  background-color: #211a1d;
+  height: 2rem;
+}
+
+.home_grid {
+  background: #fff;
+  display: flex;
+}
+
+.home_grid img {
+  border: #9c9c9c solid 1px;
+  border-radius: 0.25rem;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.home_grid_box1 {
+  min-width: 300px;
+  margin: 1rem;
+  padding: 0;
+  padding-bottom: 2.5rem;
+  border-bottom: #d4d4d4 solid 1px;
+}
+
+.home_grid_box2 {
+  margin: 1rem;
+  padding: 0;
+  padding-bottom: 2.5rem;
+  border-bottom: #d4d4d4 solid 1px;
+}
+
+.home_grid_box3 {
+  margin: 1rem;
+  padding: 0;
+  padding-bottom: 2.5rem;
+  border-bottom: #d4d4d4 solid 1px;
+}
+
+.home_grid_box4 {
+  margin: 1rem;
+  padding: 0;
+}
+
+.home_grid_box5 {
+  margin: 1rem;
+  padding: 0;
+}
+
+.home_grid_box6 {
+  margin: 1rem;
+  padding: 0;
+}
+
+.home_grid_column_1 {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  border-right: #d4d4d4 solid 1px;
+}
+
+.home_grid_column_2 {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 2;
+}
+
+.home_grid_column_3 {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 2;
+  border-left: #d4d4d4 solid 1px;
+}
+
+.home_title {
+  margin-top: 4rem;
+}
+
+.home_subtitle {
+  margin-bottom: 1.45rem;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+
+.home_card {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 4rem;
+  border-bottom: 0.5rem dashed #d4d4d4;
+}
+
+.home_card_image {
+}
+
+.home_card_description {
+}
+
+.home_card_separator {
+}
+
+@media all and (max-width: 1220px) {
+  .home_grid {
+    display: flex;
+    column-count: 2;
+  }
+
+  .home_grid_box3 {
+    border-bottom: none;
+  }
+  .home_grid_box4 {
+    padding-bottom: 2.5rem;
+    border-bottom: #d4d4d4 solid 1px;
+  }
+  .home_grid_box5 {
+    padding-bottom: 2.5rem;
+    border-bottom: #d4d4d4 solid 1px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .home_grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .home_grid_column_1 {
+    border-right: none;
+  }
+  .home_grid_box1 {
+    border-bottom: none;
+  }
+  .home_grid_box2 {
+    border-bottom: none;
+  }
+  .home_grid_box3 {
+    border-bottom: none;
+  }
+  .home_grid_box4 {
+    border-bottom: none;
+  }
+  .home_grid_box5 {
+    border-bottom: none;
+  }
+  .home_grid_box6 {
+    border-bottom: none;
+  }
+}

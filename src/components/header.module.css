@@ -1,0 +1,106 @@
+.breadcrumbs {
+  font-family: 'Barlow', sans-serif;
+  background-color: #211a1d;
+}
+.centerpart {
+  max-width: 960px;
+  height: 2rem;
+  margin: 0 auto;
+  display: flex;
+  background-color: #f2f2f2;
+}
+.breadcrumbs nav {
+  display: flex;
+}
+.breadcrumbs ol {
+  margin: 0;
+  list-style: none;
+  display: contents;
+}
+.breadcrumbs li {
+  float: left;
+  margin-bottom: 0;
+}
+.breadcrumbs li a {
+  color: #f2f2f2;
+  display: block;
+  background: #2878CC;
+  text-decoration: none;
+  position: relative;
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0 0.5rem 0 0.5rem;
+  text-align: center;
+  margin-right: 1.25rem;
+  overflow-y: clip;
+}
+.breadcrumbs li:nth-child(even) a {
+  background-color: #211a1d;
+}
+.breadcrumbs li:nth-child(even) a:before {
+  border-color: #211a1d;
+  border-left-color: transparent;
+}
+.breadcrumbs li:nth-child(even) a:after {
+  border-left-color: #211a1d;
+}
+.breadcrumbs li:first-child a {
+  padding-left: 0.5rem;
+}
+.breadcrumbs li:first-child a:before {
+  
+}
+.breadcrumbs li:last-child a {
+  padding-right: 1rem;
+  margin-right: 0;
+}
+.breadcrumbs li:last-child a:after {
+}
+.breadcrumbs li a:before, .breadcrumbs li a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border: 0 solid #2878CC;
+  border-width: 1rem 0.5rem;
+  width: 0;
+  height: 0;
+}
+.breadcrumbs li a:before {
+  left: -1rem;
+  border-left-color: transparent;
+}
+.breadcrumbs li a:after {
+  left: 100%;
+  border-color: transparent;
+  border-left-color: #2878CC;
+}
+.breadcrumbs li a:hover {
+  background-color: #0c4480;
+}
+.breadcrumbs li a:hover:before {
+  border-color: #0c4480;
+  border-left-color: transparent;
+}
+.breadcrumbs li a:hover:after {
+  border-left-color: #0c4480;
+}
+.breadcrumbs li a:active {
+  background-color: #0c4480;
+}
+.breadcrumbs li a:active:before {
+  border-color: #0c4480;
+  border-left-color: transparent;
+}
+.breadcrumbs li a:active:after {
+  border-left-color: #0c4480;
+}
+.breadcrumbs .nextline {
+  display: block;
+  flex-grow: 1;
+  background: #211a1d;
+}
+
+.titleimg {
+  height: 100%;
+  background-color: #211a1d;
+}

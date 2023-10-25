@@ -1,0 +1,95 @@
+.blogcard {
+  flex: 240px;
+}
+
+.blogimage {
+  width: 100%;
+  min-height: 120px;
+  max-height: 120px;
+  margin-bottom: 0.5rem;
+  border: #d4d4d4 solid 1px;
+}
+
+.stack {
+  display: block;
+}
+
+.developing {
+  display: block;
+  background: #ffdd26c2;
+  color: #a70046 ;
+  padding: 0 0.1rem;
+  padding-bottom: 0.1rem;
+  border-top: 2px solid #a70046;
+  border-bottom: 2px solid #a70046;
+  font-weight: 700;
+}
+
+.blogcard a {
+  text-decoration: none;
+}
+
+.blogcard a:hover {
+  text-decoration: underline;
+}
+
+.blogcard h3 {
+  margin-bottom: 0.75rem;
+}
+
+.blogcard time {
+  display: block;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0rem;
+}
+
+.blogcard p {
+  padding-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  overflow-wrap: anywhere;
+}
+
+.readmore {
+  margin: 0.5rem 0;
+  display: inline-block;
+}
+
+a.readmore:link {
+  color: #166fce;
+}
+a.readmore:visited {
+  color: #166fce;
+}
+
+.blogdate {
+  color: #595959;
+  font-size: 80%;
+}
+
+p.tags {
+  padding: 0;
+}
+
+.tags span {
+  background-color: #383882;
+  padding: 0.1rem 0.25rem;
+  margin-right: 0.5rem;
+  border-radius: 0.25rem;
+  color: #d3d0d0;
+}
+
+@media screen and (max-width: 870px) {
+  .blogcard {
+    flex: 50%;
+    display: block;
+
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .blogcard {
+    flex: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+}

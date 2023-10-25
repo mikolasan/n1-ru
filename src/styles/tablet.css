@@ -1,0 +1,33 @@
+@media all and (max-width: 1660px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-section {
+    border-bottom: #211a1d  0.25rem solid;
+  }
+
+  .left-section {
+    width: 100%;
+    max-width: 960px;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    flex-direction: row;
+  }
+  .time-block {
+    padding-top: 1.5rem;
+  }
+  .time-block span {
+    margin-left: 1.5rem;
+  }
+  .left-time-block {
+    padding-left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-bottom: 0.25rem solid #000;
+  }
+  .table-of-contents {
+    margin-left: 1.5rem;
+  }
+}

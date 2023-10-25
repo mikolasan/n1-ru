@@ -1,0 +1,8 @@
+import "./src/styles/global.css"
+import "./src/styles/search.css"
+import "./src/styles/home.css"
+import "./src/styles/tablet.css"
+import "./src/styles/mobile.css"
+import "./src/styles/tiny.css"
+import "./src/styles/prism-a11y-dark.css"
+import "katex/dist/katex.min.css"
