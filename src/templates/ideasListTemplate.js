@@ -47,7 +47,6 @@ export const query = graphql`
             title
             date
             tags
-            developing
             previewImage {
               childImageSharp {
                 gatsbyImageData(

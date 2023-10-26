@@ -1,5 +1,5 @@
 ---
-path: "/ru/neural-networks/ontologies"
+path: "/neural-networks/ontologies"
 date: "2020-07-11"
 title: "Онтологии"
 language: "ru"

@@ -1,5 +1,5 @@
 ---
-path: "/ru/neural-networks/face-recognition"
+path: "/neural-networks/face-recognition"
 date: "2020-08-09"
 title: Распознавание лиц
 language: "ru"

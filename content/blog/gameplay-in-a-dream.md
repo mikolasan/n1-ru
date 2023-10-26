@@ -1,5 +1,5 @@
 ---
-path: "/ru/blog/gameplay-in-a-dream"
+path: "/blog/gameplay-in-a-dream"
 date: 2020-11-21
 title: Игра из моего сна
 language: "ru"

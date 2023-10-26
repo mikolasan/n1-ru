@@ -1,5 +1,5 @@
 ---
-path: /ru/board-games/legend-of-the-five-rings
+path: /board-games/legend-of-the-five-rings
 date: 2020-09-09
 title: Легенда Пяти Колец
 language: "ru"

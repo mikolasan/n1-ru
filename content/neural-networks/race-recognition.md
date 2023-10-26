@@ -1,5 +1,5 @@
 ---
-path: "/ru/neural-networks/race-recognition"
+path: "/neural-networks/race-recognition"
 date: "2020-07-19"
 title: Распознавание расы по фото
 language: "ru"

@@ -173,8 +173,6 @@ const queryAll = async graphql => {
           frontmatter {
             title
             date
-            topic
-            article
           }
           id
         }
@@ -266,101 +264,26 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
   const paginationConfig = {
     "/blog": {
-      template: genericListTemplate,
-      postsPerPage: 18,
-      title: `Blog`,
-      regex: "/markdown\/blog\//",
-      section: "blog",
-    },
-    "/code/cpp": {
-      template: genericListTemplate,
-      postsPerPage: 6,
-      title: `C++`,
-      regex: "/markdown\/code\/cpp\//",
-      section: "code",
-      subsection: "cpp",
-    },
-    "/code": {
-      template: codeListTemplate,
-      postsPerPage: 9,
-      title: `Code`
-    },
-    "/devlog": {
-      template: genericListTemplate,
-      postsPerPage: 18,
-      title: `Devlog`,
-      regex: "/markdown\/devlog\//",
-      section: "blog",
-      subsection: "devlog",
-    },
-    "/gamedev": {
-      template: genericListTemplate,
-      postsPerPage: 6,
-      title: `Gamedev`,
-      regex: "/markdown\/gamedev\//",
-      section: "code",
-      subsection: "gamedev",
-    },
-    "/ideas": {
-      template: genericListTemplate,
-      postsPerPage: 12,
-      title: `Ideas`,
-      regex: `/markdown\/ideas\//`,
-      section: `code`,
-      subsection: `ideas`
-    },
-    "/linux": {
-      template: linuxListTemplate,
-      postsPerPage: 25,
-      title: `Linux`
-    },
-    "/make/3d-prints": {
-      template: genericListTemplate,
-      postsPerPage: 6,
-      title: `3D Prints`,
-      regex: "/markdown\/make\/3d-prints\//",
-      section: "make",
-      subsection: "3d-prints",
-    },
-    "/make": {
-      template: makeListTemplate,
-      postsPerPage: 6,
-      title: `Make`
-    },
-    "/projects": {
-      template: genericListTemplate,
-      postsPerPage: 6,
-      title: `Projects`,
-      regex: "/markdown\/projects\//",
-      section: "code",
-      subsection: "projects",
-    },
-    "/science": {
-      template: scienceListTemplate,
-      postsPerPage: 6,
-      title: `Science`
-    },
-    "/ru/blog": {
       template: ruBlogListTemplate,
       postsPerPage: 6,
       title: `Остальное`
     },
-    "/ru/paranormal": {
+    "/paranormal": {
       template: ruParanormalListTemplate,
       postsPerPage: 6,
       title: `Паранормальные экспедиции`
     },
-    "/ru/make": {
+    "/make": {
       template: ruMakeListTemplate,
       postsPerPage: 6,
       title: `Мастерская`
     },
-    "/ru/devlog": {
+    "/devlog": {
       template: ruDevlogListTemplate,
       postsPerPage: 6,
       title: `Разношерстный девлог`
     },
-    "/ru/neural-networks": {
+    "/neural-networks": {
       template: ruScienceListTemplate,
       postsPerPage: 6,
       title: `Наука`
@@ -385,7 +308,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const sectionNodes = section.nodes;
     for (let j = 0; j < sectionNodes.length; j++) {
       const node = sectionNodes[j];
-      const template = sectionName.startsWith(`/ru`) ? pageRuTemplate : pageTemplate 
+      const template = pageRuTemplate
       const next = j === 0 ? null : sectionNodes[j - 1]
       const previous = j === sectionNodes.length - 1 ? null : sectionNodes[j + 1]
       const pageData = nodeToPageData(node, template, previous, next, section.recentArticles)

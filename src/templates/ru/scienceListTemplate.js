@@ -19,7 +19,7 @@ const RuScience = ({ data, pageContext }) => (
   >
     <PostList
       posts={data.allMarkdownRemark.edges}
-      baseUrl="/ru/neural-networks"
+      baseUrl="/neural-networks"
       pageContext={pageContext}
     />
   </Layout>
@@ -33,7 +33,7 @@ export const query = graphql`
       limit: $limit,
       skip: $skip,
       sort: { frontmatter: {date: DESC}},
-      filter: {fileAbsolutePath: { regex: "/\/ru\/neural-networks\//"}}
+      filter: {fileAbsolutePath: { regex: "/\/neural-networks\//"}}
     ) {
       totalCount
       edges {

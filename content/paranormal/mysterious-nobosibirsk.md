@@ -1,5 +1,5 @@
 ---
-path: /ru/paranormal/mysterious-novosibirsk
+path: /paranormal/mysterious-novosibirsk
 date: 2021-04-06
 title: "Мистический Новосибирск"
 draft: true

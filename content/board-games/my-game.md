@@ -1,5 +1,5 @@
 ---
-path: "/ru/board-games/my-game"
+path: "/board-games/my-game"
 date: "2020-09-21"
 title: "Моя игра"
 language: "ru"
@@ -14,17 +14,17 @@ lastModified: 2021-10-31
 
 ## Правила
 
-[Подготовка](/ru/board-games/my-game/setup)
+[Подготовка](/board-games/my-game/setup)
 
-[Ход](/ru/board-games/my-game/turns)
+[Ход](/board-games/my-game/turns)
 
-[Навыки персонажей](/ru/board-games/my-game/abilities)
+[Навыки персонажей](/board-games/my-game/abilities)
 
-[Репутация](/ru/board-games/my-game/reputation)
+[Репутация](/board-games/my-game/reputation)
 
-[Квесты/задания](/ru/board-games/my-game/quests) (Происходящее)
+[Квесты/задания](/board-games/my-game/quests) (Происходящее)
 
-[Предметы/репутация](/ru/board-games/my-game/items) (Осмотрительность)
+[Предметы/репутация](/board-games/my-game/items) (Осмотрительность)
 
 ![Расклад на столе](./my-game/table-layout.jpg)
 

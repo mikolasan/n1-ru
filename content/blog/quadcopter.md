@@ -1,5 +1,5 @@
 ---
-path: "/ru/blog/quadcopter"
+path: "/blog/quadcopter"
 date: 2021-03-25
 title: "Квадрокоптер"
 language: "ru"

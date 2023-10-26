@@ -1,7 +1,7 @@
 ---
 title: Тот странный USB адаптер
 date: 2020-06-21
-path: /ru/blog/that-strange-dongle
+path: /blog/that-strange-dongle
 language: "ru"
 published: 2021-10-28
 lastModified: 2021-10-28

@@ -1,8 +1,8 @@
 const escapeStringRegexp = require("escape-string-regexp")
 const nifty = require("../nifty")
 
-const pagePath = `src/markdown`
-const indexName = `Pages`
+const pagePath = `content`
+const indexName = `n1_ru`
 
 const pageQuery = `{
   pages: allMarkdownRemark(

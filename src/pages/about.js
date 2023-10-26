@@ -1,6 +1,6 @@
 import React from "react"
-import Layout from "../../components/ru/layout"
-import { SEO } from "../../components/seo"
+import Layout from "../components/ru/layout"
+import { SEO } from "../components/seo"
 import * as styles from "./about.module.css"
 
 const RuAbout = ({ pageContext }) => (
@@ -54,7 +54,7 @@ const RuAbout = ({ pageContext }) => (
             В этом хобби нет никакого давления по времени или качеству, поэтому я могу частенько ударяться в перфекционизм.
           </p>
           <div className={styles.action}>
-            <a href="/ru/youtube">
+            <a href="/youtube">
               <button>Перейти к разделу</button>
             </a>
           </div>
@@ -69,7 +69,7 @@ const RuAbout = ({ pageContext }) => (
             Профессионально занимаюсь разработкой програмных продуктов в индустрии азартных игр.
           </p>
           <div className={styles.action}>
-            <a href="/ru/cv">
+            <a href="/cv">
               <button>К резюме</button>
             </a>
           </div>
@@ -90,7 +90,7 @@ const RuAbout = ({ pageContext }) => (
             моделью некоторой более общей познающей системы, которая включает в себя как память, так и восприятие&#187;.
           </p>
           <div className={styles.action}>
-            <a href="/ru/neural-networks/roadmap">
+            <a href="/neural-networks/roadmap">
               <button>Разные мысли о своей научной работе</button>
             </a>
           </div>
@@ -120,7 +120,7 @@ const RuAbout = ({ pageContext }) => (
             ?
           </p>
           <div className={styles.action}>
-            <a href="/ru/why">
+            <a href="/why">
               <button>Зачем?</button>
             </a>
           </div>

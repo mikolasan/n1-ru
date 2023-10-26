@@ -1,5 +1,5 @@
 ---
-path: "/ru/youtube/about"
+path: "/youtube/about"
 date: "2020-09-27"
 title: "О Ютюб канале"
 language: "ru"

@@ -15,4 +15,4 @@ lastModified: 2022-02-02
 
 ![Home Assistant example](home-assistant-example-3.png)
 
-[Как сделать экран красивым?](/ru/make/hydroponics/dashboard-ui)
+[Как сделать экран красивым?](/make/hydroponics/dashboard-ui)

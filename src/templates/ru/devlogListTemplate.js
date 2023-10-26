@@ -12,9 +12,9 @@ const RuDevlog = ({ data, pageContext }) => (
     languageName="Switch to english version"
     anotherLanguageLink="/"
     buttonText="Игродельная"
-    buttonLink="/ru/gamedev"
+    buttonLink="/gamedev"
     secondButtonText="Дизайн"
-    secondButtonLink="/ru/design"
+    secondButtonLink="/design"
     bannerParagraph={[
       <h1>Разношерстный девлог</h1>,
       <p>Процесс разработки завораживает. Как из простых иструкций вырастают системы, как разбросанная логика начинает дружно работать. 
@@ -28,7 +28,7 @@ const RuDevlog = ({ data, pageContext }) => (
     </ul>
     <PostList
       posts={data.allMarkdownRemark.edges}
-      baseUrl="/ru/devlog"
+      baseUrl="/devlog"
       pageContext={pageContext}
     />
   </Layout>
@@ -42,7 +42,7 @@ export const query = graphql`
       limit: $limit,
       skip: $skip,
       sort: { frontmatter: {date: DESC}},
-      filter: {fileAbsolutePath: { regex: "/\/ru\/devlog\//"}}
+      filter: {fileAbsolutePath: { regex: "/\/devlog\//"}}
     ) {
       totalCount
       edges {

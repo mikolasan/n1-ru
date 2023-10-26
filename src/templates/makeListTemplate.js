@@ -12,7 +12,7 @@ const Make = ({ data, pageContext }) => (
     section="make"
     crumbs={pageContext.breadcrumb.crumbs}
     languageName="Switch to russian version"
-    anotherLanguageLink="/ru/make"
+    anotherLanguageLink="/make"
   >
     <PostList
       posts={data.allMarkdownRemark.edges}
@@ -59,7 +59,6 @@ export const query = graphql`
           frontmatter {
             title
             date
-            developing
             previewImage {
               childImageSharp {
                 gatsbyImageData(

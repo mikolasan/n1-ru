@@ -12,7 +12,7 @@ const Science = ({ data, pageContext }) => (
     section="science"
     crumbs={pageContext.breadcrumb.crumbs}
     languageName="Switch to russian version"
-    anotherLanguageLink="/ru/neural-networks"
+    anotherLanguageLink="/neural-networks"
   >
     <PostList
       posts={data.allMarkdownRemark.edges}
@@ -43,7 +43,6 @@ export const query = graphql`
       sort: { frontmatter: {date: DESC}},
       filter: {
         fileAbsolutePath: { regex: "/markdown\/science\//"},
-        frontmatter: { topic: {ne: true}, article: {ne: true}}
       }
     ) {
       totalCount
@@ -53,7 +52,6 @@ export const query = graphql`
           frontmatter {
             title
             date
-            developing
             previewImage {
               childImageSharp {
                 gatsbyImageData(

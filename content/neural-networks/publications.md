@@ -1,5 +1,5 @@
 ---
-path: "/ru/neural-networks/publications"
+path: "/neural-networks/publications"
 date: "2020-04-06"
 title: "Публикации"
 published: 2021-10-13

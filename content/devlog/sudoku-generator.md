@@ -1,5 +1,5 @@
 ---
-path: "/ru/blog/sudoku-generator"
+path: "/blog/sudoku-generator"
 date: 2019-03-04
 title: "Sudoku generator"
 language: "ru"

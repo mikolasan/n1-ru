@@ -1,5 +1,5 @@
 ---
-path: "/ru/youtube/fan-resurrection"
+path: "/youtube/fan-resurrection"
 date: "2021-01-27"
 title: "Почему вытяжной вентилятор перестает крутиться"
 subtitle: "Воскрешение вентилятора из мертвых. SILENT - 100"

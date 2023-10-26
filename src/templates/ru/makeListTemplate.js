@@ -12,9 +12,9 @@ const RuMake = ({ data, pageContext }) => (
     languageName="Switch to english version"
     anotherLanguageLink="/"
     buttonText="Гидропоника"
-    buttonLink="/ru/make/hydroponics"
+    buttonLink="/make/hydroponics"
     secondButtonText="Кубики"
-    secondButtonLink="/ru/make/resin-dice"
+    secondButtonLink="/make/resin-dice"
     bannerParagraph={[
       <h1>Мастерская</h1>,
       <p>Встраиваемые системы, маленькие компьютеры, пайка компонентов, 3Д печать - вот это всё</p>
@@ -22,7 +22,7 @@ const RuMake = ({ data, pageContext }) => (
   >
     <PostList
       posts={data.allMarkdownRemark.edges}
-      baseUrl="/ru/make"
+      baseUrl="/make"
       pageContext={pageContext}
     />
 
@@ -37,7 +37,7 @@ export const query = graphql`
       limit: $limit,
       skip: $skip,
       sort: { frontmatter: {date: DESC}},
-      filter: { fileAbsolutePath: { regex: "/\/ru\/make\/(?!hydroponics)/"} }
+      filter: { fileAbsolutePath: { regex: "/\/make\/(?!hydroponics)/"} }
     ) {
       totalCount
       edges {

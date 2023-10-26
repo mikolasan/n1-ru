@@ -89,9 +89,7 @@ export const pageQuery = graphql`
         path
         title
         subtitle
-        section
         draft
-        developing
         buttonText
         buttonLink
         secondButtonText

@@ -1,5 +1,5 @@
 ---
-path: "/ru/neural-networks/name-generator"
+path: "/neural-networks/name-generator"
 date: "2020-09-26"
 title: "Марковские цепи на Python без сторонних библиотек"
 language: "ru"

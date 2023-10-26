@@ -1,5 +1,5 @@
 ---
-path: "/ru/blog/task-management-online"
+path: "/blog/task-management-online"
 date: "2020-11-30"
 title: "Организация задач через веб интерфейс"
 language: "ru"

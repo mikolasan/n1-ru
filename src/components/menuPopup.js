@@ -19,14 +19,14 @@ const items = [
 ]
 
 const ruItems = [
-  {link: "/ru/", label: "Главная", description: ""},
-  {link: "/ru/neural-networks", label: "Нейронные сети", description: ""},
-  {link: "/ru/make", label: "Мастерская", description: ""},
-  {link: "/ru/devlog", label: "Девлог", description: ""},
-  {link: "/ru/paranormal", label: "Паранормальное", description: ""},
-  {link: "/ru/board-games", label: "Настольные игры", description: ""},
-  {link: "/ru/blog", label: "Остальное", description: ""},
-  {link: "/ru/about", label: "О себе", description: ""},
+  {link: "/", label: "Главная", description: ""},
+  {link: "/neural-networks", label: "Нейронные сети", description: ""},
+  {link: "/make", label: "Мастерская", description: ""},
+  {link: "/devlog", label: "Девлог", description: ""},
+  {link: "/paranormal", label: "Паранормальное", description: ""},
+  {link: "/board-games", label: "Настольные игры", description: ""},
+  {link: "/blog", label: "Остальное", description: ""},
+  {link: "/about", label: "О себе", description: ""},
 ]
 
 class MenuPopup extends React.Component {
@@ -50,7 +50,7 @@ class MenuPopup extends React.Component {
         <div className={styles.back}>
           {this.language === "ru" ? (
             <div className={styles.featuredlink}>
-              <a href="/ru/make/hydroponics">
+              <a href="/make/hydroponics">
                 <div className={styles.featuredspace}>
                   <img className={styles.newtag} src="/new.png" alt="tag saying NEW" />
                   <img className={styles.featuredimage} src="/hydroponics.png" alt="plant in the pot" />

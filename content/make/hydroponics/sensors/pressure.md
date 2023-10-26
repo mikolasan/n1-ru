@@ -3,9 +3,9 @@ date: 2022-01-16
 title: Датчик давления
 subtitle: "Статья из цикла про гидропонику"
 buttonText: Сенсоры
-buttonLink: /ru/make/hydroponics/sensors
+buttonLink: /make/hydroponics/sensors
 secondButtonText: Гидропоника
-secondButtonLink: /ru/make/hydroponics
+secondButtonLink: /make/hydroponics
 tags: ["hydroponics"]
 language: "ru"
 

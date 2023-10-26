@@ -1,5 +1,5 @@
 ---
-path: "/ru/devlog/battleship"
+path: "/devlog/battleship"
 date: "2020-04-06"
 title: Морской бой
 featuredImage: battleship_last_step.png

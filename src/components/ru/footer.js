@@ -20,17 +20,23 @@ const RuFooter = () => {
         <div className="bottommenu">
           <h2>Разделы</h2>
           <div className="bottomlist">
-            <Link to="/ru/ideas">Идеи</Link>
-            <Link to="/ru/projects">Проекты</Link>
-            <Link to="/ru/neural-networks">Наука</Link>
-            <Link to="/ru/blog">Блог</Link>
+            <Link to="/neural-networks">Наука</Link>
+            <Link to="/make">Мастерская</Link>
+            <Link to="/make/hydroponics">Гидропоника</Link>
+            <Link to="/devlog">Девлог</Link>
+            <Link to="/gamedev">Игродел</Link>
+            <Link to="/blog">Блог</Link>
           </div>
         </div>
         <div className="bottommenu">
           <h2>Ещё</h2>
           <div className="bottomlist">
-            <Link to="/ru/terms">Условия</Link>
-            <Link to="/ru/privacy">Конфиденциальность</Link>
+            <Link to="/projects">Проекты</Link>
+            <Link to="/ideas">Идеи</Link>
+            <Link to="/design">Дизайн</Link>
+            <Link to="/youtube">Видео</Link>
+            <Link to="/terms">Условия</Link>
+            <Link to="/privacy">Конфиденциальность</Link>
           </div>
         </div>
         <div className="bottomxsocial">

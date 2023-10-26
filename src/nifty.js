@@ -1,6 +1,6 @@
 
-const absPathToUrl = (absPath, src_dir = "markdown") => {
-  const regex = new RegExp(String.raw`\/src\/${src_dir}(.*)\..*`)
+const absPathToUrl = (absPath, src_dir = "content") => {
+  const regex = new RegExp(String.raw`\/${src_dir}(.*)\..*`)
   const match = absPath.match(regex)
   if (match && match.length > 0) {
     return match[1]

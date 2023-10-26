@@ -10,7 +10,7 @@ lastModified: 2022-02-06
 
 ## Зачем
 
-Выращивать в течении зимы клубнику, [чернику](/ru/make/hydroponics/blackberry), помидоры, [салат](/ru/make/hydroponics/lettuce) и [килантру](/ru/make/hydroponics/greens). Или в течении лета. Или просто с того момента, когда захотелось начать этот проект.
+Выращивать в течении зимы клубнику, [чернику](/make/hydroponics/blackberry), помидоры, [салат](/make/hydroponics/lettuce) и [килантру](/make/hydroponics/greens). Или в течении лета. Или просто с того момента, когда захотелось начать этот проект.
 
 Выращивать будем в обычной квартире, никаких халатов и других специальных условий к помещению не предъявляется, но система должна с этим справляться.
 
@@ -22,39 +22,39 @@ lastModified: 2022-02-06
 
 ## Обзор ресурсов
 
-- [Подборка сайтов](/ru/make/hydroponics/online-resources)
-- [Что есть на рынке](/ru/make/hydroponics/readymade)
-- [Вертикальные фермы](/ru/make/hydroponics/vertical-farming)
+- [Подборка сайтов](/make/hydroponics/online-resources)
+- [Что есть на рынке](/make/hydroponics/readymade)
+- [Вертикальные фермы](/make/hydroponics/vertical-farming)
 
 
 ### Теория
 
 - Инфографика в статье "Гидропоника для новичков с чего начать"  https://dzagigrow.ru/blog/
 - Правила приготовления питательного раствора https://sadobzor.ru/gidroponika/udobreniya-dlya-gidroponiki.htmlgidroponika-dlya-novichkov-s-chego-nachat/
-- [Nutrient Film Technique](/ru/make/hydroponics/nutrient-film-technique)
+- [Nutrient Film Technique](/make/hydroponics/nutrient-film-technique)
 - Система капельного орошения https://floragrowing.com/ru/encyclopedia/sistema-kapelnogo-orosheniya
-- [Чистая вода](/ru/make/hydroponics/clean-water)
+- [Чистая вода](/make/hydroponics/clean-water)
 
 ## Собираю свою систему
 
 Для начала предположим, что количество освещения и влажность вохдуха находятся в норме. То есть на первом этапе эти факторы исключены из системы и будут регулироваться вручную.
 
-Все начинается с [плана и идей](/ru/make/hydroponics/plan)
+Все начинается с [плана и идей](/make/hydroponics/plan)
 
-- [Система капельного орошения](/ru/make/hydroponics/drip-system)
-- [Все о том, как течет вода](/ru/make/hydroponics/water-flow)
+- [Система капельного орошения](/make/hydroponics/drip-system)
+- [Все о том, как течет вода](/make/hydroponics/water-flow)
 - Компоненты
-  - [Воздушный насос](/ru/make/hydroponics/air-pump)
-  - [Водяной насос](/ru/make/hydroponics/water-pump)
-  - [Корпус](/ru/make/hydroponics/frame)/ трубы для посадки/ стеллаж
-  - [Экран с показаниями](/ru/make/hydroponics/dashboard-ui)
-- [Сенсоры](/ru/make/hydroponics/sensors)
-  - [PH кислотность воды](/ru/make/hydroponics/sensors/ph)
-  - [CO2 углекислый газ](/ru/make/hydroponics/sensors/co2)
-  - [Давление](/ru/make/hydroponics/sensors/pressure)
-  - [Влажность](/ru/make/hydroponics/sensors/humidity)
-  - [Температура](/ru/make/hydroponics/sensors/temperature)
-  - [Датчик солей](/ru/make/hydroponics/sensors/tds)
+  - [Воздушный насос](/make/hydroponics/air-pump)
+  - [Водяной насос](/make/hydroponics/water-pump)
+  - [Корпус](/make/hydroponics/frame)/ трубы для посадки/ стеллаж
+  - [Экран с показаниями](/make/hydroponics/dashboard-ui)
+- [Сенсоры](/make/hydroponics/sensors)
+  - [PH кислотность воды](/make/hydroponics/sensors/ph)
+  - [CO2 углекислый газ](/make/hydroponics/sensors/co2)
+  - [Давление](/make/hydroponics/sensors/pressure)
+  - [Влажность](/make/hydroponics/sensors/humidity)
+  - [Температура](/make/hydroponics/sensors/temperature)
+  - [Датчик солей](/make/hydroponics/sensors/tds)
 
 
 ## Часто задаваемые вопросы

@@ -1,5 +1,5 @@
 ---
-path: "/ru/neural-networks/adapt-rntn-model"
+path: "/neural-networks/adapt-rntn-model"
 date: "2020-08-02"
 title: Приспосабливаем RNTN модель
 language: "ru"

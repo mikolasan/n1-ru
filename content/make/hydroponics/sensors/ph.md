@@ -1,12 +1,12 @@
 ---
-path: "/ru/make/hydroponics/sensors/ph"
+path: "/make/hydroponics/sensors/ph"
 date: "2021-07-17"
 title: "Кислотность воды"
 subtitle: "Статья из цикла про гидропонику"
 buttonText: Сенсоры
-buttonLink: /ru/make/hydroponics/sensors
+buttonLink: /make/hydroponics/sensors
 secondButtonText: Гидропоника
-secondButtonLink: /ru/make/hydroponics
+secondButtonLink: /make/hydroponics
 tags: ["hydroponics"]
 language: "ru"
 published: 2021-11-10
@@ -23,7 +23,7 @@ lastModified: 2022-07-31
 
 ### Подключение
 
-Покдключать будем к плате [Wemos D1](/ru/make/wemos-d1), которую я импульсивно купил в местном магазине. 
+Покдключать будем к плате [Wemos D1](/make/wemos-d1), которую я импульсивно купил в местном магазине. 
 Подключение такое же как и к любой другой Arduino-совместимой плате:
 
 - GND - GND, земля к земле (на плате разведены раздельно, но подключаем их к плате к любому пину GND, которые суть один контакт)

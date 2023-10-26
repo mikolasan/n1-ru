@@ -1,6 +1,6 @@
 import React from "react"
-import Layout from "../../components/ru/layout"
-import { SEO } from "./../../components/seo"
+import Layout from "../components/ru/layout"
+import { SEO } from "../components/seo"
 import * as styles from "./index.module.css"
 
 const RuIndex = ({ pageContext }) => (
@@ -32,10 +32,10 @@ const RuIndex = ({ pageContext }) => (
         система автоматической посадки из семян, библиотека заболеваний растений, выявление причин неурожая.
       </p>
       <p>
-        Вся информация такая как видео, ссылки на компоненты, заметки из блога - всё это собрано в <a href="/ru/make/hydroponics">специальном разделе</a>.
+        Вся информация такая как видео, ссылки на компоненты, заметки из блога - всё это собрано в <a href="/make/hydroponics">специальном разделе</a>.
       </p>
       <div className={[styles.action, styles.hydro].join(" ")}>
-        <a href="/ru/make/hydroponics">
+        <a href="/make/hydroponics">
           <button>Перейти к разделу</button>
         </a>
       </div>
@@ -51,7 +51,7 @@ const RuIndex = ({ pageContext }) => (
             что все элеметарное - просто, а в совокупности они могут создавать невероятные выводы
           </p>
           <div className={styles.action}>
-            <a href="/ru/neural-networks">
+            <a href="/neural-networks">
               <button>Перейти к разделу</button>
             </a>
           </div>
@@ -66,7 +66,7 @@ const RuIndex = ({ pageContext }) => (
             Встраиваемые системы, маленькие компьютеры, пайка компонентов, 3Д печать - вот это всё
           </p>
           <div className={styles.action}>
-            <a href="/ru/make">
+            <a href="/make">
               <button>Перейти к разделу</button>
             </a>
           </div>
@@ -82,7 +82,7 @@ const RuIndex = ({ pageContext }) => (
             Это и просто советы о житейских повседневных проблемах в данном дневнике разработки. Много разных проектов.
           </p>
           <div className={styles.action}>
-            <a href="/ru/devlog">
+            <a href="/devlog">
               <button>Перейти к разделу</button>
             </a>
           </div>
@@ -98,7 +98,7 @@ const RuIndex = ({ pageContext }) => (
             как например Бирмингемский металлургический завод буржуя Слосса или как «Пойма» в национальном заповеднике Блэкуотер.
           </p>
           <div className={styles.action}>
-            <a href="/ru/paranormal">
+            <a href="/paranormal">
               <button>Перейти к разделу</button>
             </a>
           </div>
@@ -115,7 +115,7 @@ const RuIndex = ({ pageContext }) => (
             но еще интереснее может оказаться создание своей игры
           </p>
           <div className={styles.action}>
-            <a href="/ru/board-games">
+            <a href="/board-games">
               <button>Перейти к разделу</button>
             </a>
           </div>
@@ -128,7 +128,7 @@ const RuIndex = ({ pageContext }) => (
           <h2>Остальное</h2>
           <p>И всё остальное остается в этом блоге.</p>
           <div className={styles.action}>
-            <a href="/ru/blog">
+            <a href="/blog">
               <button>Перейти к разделу</button>
             </a>
           </div>

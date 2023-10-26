@@ -9,13 +9,13 @@ import 'dotenv/config'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const require = createRequire(import.meta.url)
 
-const siteUrl = `https://neupokoev.xyz`
+const siteUrl = `https://ru.neupokoev.xyz`
 
 const config = {
   siteMetadata: {
     siteUrl: siteUrl,
-    title: `Robots, science, gamedev - N`,
-    description: `Magazine, blog and knowledgebase for geeks`,
+    title: `Лаборатория Н`,
+    description: `Наука, мастерская, девлог`,
     author: `@mikolasan`,
   },
   trailingSlash: `ignore`,
@@ -100,7 +100,7 @@ const config = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
-        path: `${__dirname}/src/markdown`,
+        path: `${__dirname}/content`,
       },
     },
     {
@@ -135,20 +135,6 @@ const config = {
         autoGenHomeLabel: `    `,
         trailingSlashes: false,
       }
-    },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [
-          `G-FNWV0QFPSH`
-        ],
-        pluginConfig: {
-          // Puts tracking script in the head instead of the body
-          head: true,
-          // using Google Global Site Tag does not necessarily constitute Tracking
-          respectDNT: true,
-        },
-      },
     },
     {
       resolve: "gatsby-plugin-sitemap",
@@ -246,14 +232,14 @@ const config = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
-    {
-      resolve: `gatsby-plugin-algolia`,
-      options: {
-        appId: process.env.GATSBY_ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_ADMIN_KEY,
-        queries: require("./src/utils/algolia-queries")
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-algolia`,
+    //   options: {
+    //     appId: process.env.GATSBY_ALGOLIA_APP_ID,
+    //     apiKey: process.env.ALGOLIA_ADMIN_KEY,
+    //     queries: require("./src/utils/algolia-queries")
+    //   },
+    // },
     `@mediacurrent/gatsby-plugin-silence-css-order-warning`,
     {
       resolve: `gatsby-plugin-feed`,
@@ -288,7 +274,6 @@ const config = {
             query: `
               {
                 allMarkdownRemark(
-                  filter: {fileAbsolutePath: {regex: "/^(?!.*\/ru\/.*)/"}}
                   sort: { frontmatter: {lastModified: DESC} },
                 ) {
                   edges {
@@ -307,7 +292,7 @@ const config = {
               }
             `,
             output: "/rss.xml",
-            title: "N - Robots, science, gamedev - RSS Feed",
+            title: "Лаборатория Н - Наука, мастерская, девлог - RSS лента",
           },
         ],
       },

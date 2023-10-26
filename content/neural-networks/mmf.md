@@ -1,5 +1,5 @@
 ---
-path: "/ru/neural-networks/mmf"
+path: "/neural-networks/mmf"
 date: "2020-07-19"
 title: Запускаем MMF
 language: "ru"

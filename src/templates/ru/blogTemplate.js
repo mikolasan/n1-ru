@@ -62,7 +62,6 @@ export const pageQuery = graphql`
         lastModified(formatString: "MMMM DD, YYYY")
         path
         title
-        section
         draft
         subtitle
         buttonText

@@ -1,12 +1,12 @@
 ---
-path: "/ru/make/hydroponics/sensors/co2"
+path: "/make/hydroponics/sensors/co2"
 date: "2021-07-19"
 title: "Сенсор углекислого газа"
 subtitle: "Статья из цикла про гидропонику"
 buttonText: Сенсоры
-buttonLink: /ru/make/hydroponics/sensors
+buttonLink: /make/hydroponics/sensors
 secondButtonText: Гидропоника
-secondButtonLink: /ru/make/hydroponics
+secondButtonLink: /make/hydroponics
 featuredImage: co2-hero.jpg
 tags: ["hydroponics"]
 language: "ru"
@@ -14,7 +14,7 @@ published: 2021-11-10
 lastModified: 2022-07-31
 ---
 
-С одной стороны найти дешевый датчик углекислого газа сложно, потому что тема климата и окружающей среды для DIY еще не поставлена на поток, рынок в основном предлагает датчики угарного газа, дыма, алкоголя и другого. С другой стороны всяких разнообразных решений по детектированию углекислого газа намного больше чем датчиков [кислотности воды](/ru/make/hydroponics/sensors/ph) или [температуры](/ru/make/hydroponics/sensors/temperature):
+С одной стороны найти дешевый датчик углекислого газа сложно, потому что тема климата и окружающей среды для DIY еще не поставлена на поток, рынок в основном предлагает датчики угарного газа, дыма, алкоголя и другого. С другой стороны всяких разнообразных решений по детектированию углекислого газа намного больше чем датчиков [кислотности воды](/make/hydroponics/sensors/ph) или [температуры](/make/hydroponics/sensors/temperature):
 
 - [SCD30 Sensirion](https://www.sensirion.com/en/environmental-sensors/carbon-dioxide-sensors/carbon-dioxide-sensors-scd30/)
 - [AMS IAQ-CORE C](https://www.compel.ru/item-pdf/c232e7e7dbddb20824a26cdc0f748bed/pn/ams~iaq-core-c.pdf)
@@ -101,7 +101,7 @@ Technical Parameters
 
 ## Скрипт для Малинки
 
-Допустим, что на Малинке уже [стоит система](/ru/make/raspberry-pi-setup). Вот скрипт для Малинки на Питоне
+Допустим, что на Малинке уже [стоит система](/make/raspberry-pi-setup). Вот скрипт для Малинки на Питоне
 
 ```python
 

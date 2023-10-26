@@ -1,6 +1,6 @@
 import React from "react"
-import Layout from "../../components/ru/layout"
-import { SEO } from "../../components/seo"
+import Layout from "../components/ru/layout"
+import { SEO } from "../components/seo"
 
 const Projects = ({ data }) => (
   <Layout
@@ -12,7 +12,7 @@ const Projects = ({ data }) => (
   >
     <div className="ideacards">
       <div className="ideacard">
-        <a href="/ru/make/hydroponics">
+        <a href="/make/hydroponics">
           <img src="/images/projects/hydroponics.jpg" alt="Hydroponics"/>
         </a>
         <div className="idea-card-container">
@@ -22,7 +22,7 @@ const Projects = ({ data }) => (
       </div>
 
       <div className="ideacard">
-        <a href="/ru/board-games">
+        <a href="/board-games">
           <img src="/images/projects/board-game.jpg" alt="Prototype playthrough"/>
         </a>
         <div className="idea-card-container">
@@ -32,7 +32,7 @@ const Projects = ({ data }) => (
       </div>
 
       <div className="ideacard">
-        <a href="/ru/youtube">
+        <a href="/youtube">
           <img src="/images/projects/youtube.jpg" alt="YouTube channel art" />
         </a>
         <div className="idea-card-container">
@@ -43,10 +43,10 @@ const Projects = ({ data }) => (
 
     </div>
     <h2>Разработка программ</h2>
-    <p>Что есть интересного на моем GitHub, я кратко перечислил на <a href="/ru/devlog/github">отдельной странице</a>.</p>
+    <p>Что есть интересного на моем GitHub, я кратко перечислил на <a href="/devlog/github">отдельной странице</a>.</p>
     <div className="ideacards">
       <div className="ideacard">
-        <a href="/ru/devlog/imperial-russia">
+        <a href="/devlog/imperial-russia">
           <img src="/images/projects/imperial-russia.jpg" alt="Russian village" />
         </a>
         <div className="idea-card-container">
@@ -56,7 +56,7 @@ const Projects = ({ data }) => (
       </div>
 
       <div className="ideacard">
-        <a href="/ru/devlog/pet-project-navigator">
+        <a href="/devlog/pet-project-navigator">
           <img src="/images/projects/pet-project-navigator.jpg" alt="UI" />
         </a>
         <div className="idea-card-container">
@@ -67,10 +67,10 @@ const Projects = ({ data }) => (
     </div>
 
     <h2>Разработка игр</h2>
-    <a href="/ru/gamedev">Перейти в раздел</a>
+    <a href="/gamedev">Перейти в раздел</a>
     <div className="ideacards">
       <div className="ideacard">
-        <a href="/ru/devlog/pyroguelike">
+        <a href="/devlog/pyroguelike">
           <img src="/images/projects/not-your-fathers-roguelike.jpg" alt="Pixel art level"/>
         </a>
         <div className="idea-card-container">
@@ -80,7 +80,7 @@ const Projects = ({ data }) => (
       </div>
 
       <div className="ideacard">
-        <a href="/ru/devlog/battleship">
+        <a href="/devlog/battleship">
           <img src="/images/projects/bato-yo-slaget.jpg" alt="Ship in the acid sea"/>
         </a>
         <div className="idea-card-container">
@@ -90,7 +90,7 @@ const Projects = ({ data }) => (
       </div>
 
       <div className="ideacard">
-        <a href="/ru/devlog/overload-game">
+        <a href="/devlog/overload-game">
           <img src="/images/projects/overload-cpp.jpg" alt="Synthwave style landscape" />
         </a>
         <div className="idea-card-container">
@@ -100,7 +100,7 @@ const Projects = ({ data }) => (
       </div>
 
       <div className="ideacard">
-        <a href="/ru/devlog/sudoku-16x16">
+        <a href="/devlog/sudoku-16x16">
           <img src="/images/projects/sudoku.jpg" alt="Game screen" />
         </a>
         <div className="idea-card-container">

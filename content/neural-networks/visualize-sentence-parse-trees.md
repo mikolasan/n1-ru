@@ -1,5 +1,5 @@
 ---
-path: "/ru/neural-networks/visualize-sentence-parse-trees"
+path: "/neural-networks/visualize-sentence-parse-trees"
 date: "2020-08-26"
 title: Деревья
 language: "ru"
@@ -8,7 +8,7 @@ published: 2021-10-13
 lastModified: 2022-07-31
 ---
 
-Будь-то работа с [CoreNLP библиотекой](/ru/neural-networks/modifying-stanford-parser) или [GPT-2](/ru/neural-networks/gpt-2), в любом случае предложение представляется в виде дерева.
+Будь-то работа с [CoreNLP библиотекой](/neural-networks/modifying-stanford-parser) или [GPT-2](/neural-networks/gpt-2), в любом случае предложение представляется в виде дерева.
 Для создания картинки этого дерева есть разные готовые решения. Вот что я подобрал для себя.
 
 

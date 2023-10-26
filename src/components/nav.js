@@ -5,7 +5,7 @@ import LogoButton from "./logoButton"
 import Search from "./search"
 import * as styles from "./navigationBar.module.css"
 
-const searchIndices = [{ name: `Pages`, title: `Pages` }]
+const searchIndices = [{ name: `n1_ru`, title: `Pages` }]
 
 const Nav = ({ section }) => (
   <nav className={styles.topnav}>

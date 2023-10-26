@@ -1,5 +1,5 @@
 ---
-path: "/ru/neural-networks/roadmap"
+path: "/neural-networks/roadmap"
 date: "2020-03-26"
 title: "Разные мысли о своей научной работе"
 draft: true

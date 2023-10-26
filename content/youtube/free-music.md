@@ -1,5 +1,5 @@
 ---
-path: "/ru/blog/youtube-free-music"
+path: "/blog/youtube-free-music"
 date: "2020-09-20"
 title: "Бесплатная музыка для YouTube"
 language: "ru"

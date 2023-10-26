@@ -19,7 +19,7 @@ const RuParanormal = ({ data, pageContext }) => (
   >
     <PostList
       posts={data.allMarkdownRemark.edges}
-      baseUrl="/ru/paranormal"
+      baseUrl="/paranormal"
       pageContext={pageContext}
     />
   </Layout>
@@ -33,7 +33,7 @@ export const query = graphql`
       limit: $limit,
       skip: $skip,
       sort: { frontmatter: {date: DESC}},
-      filter: {fileAbsolutePath: { regex: "/\/ru\/paranormal\//"}}
+      filter: {fileAbsolutePath: { regex: "/\/paranormal\//"}}
     ) {
       totalCount
       edges {

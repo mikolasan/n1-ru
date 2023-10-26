@@ -1,18 +1,18 @@
 import React from "react"
 import { removeHtmlExtension, removeTrailingSlash } from "../nifty"
 
-const siteUrl = `https://neupokoev.xyz`
+const siteUrl = `https://ru.neupokoev.xyz`
 const siteDescription = `Magazine, blog and knowledge base for embedded engineers, game developers and geeks`
-const siteImageUrl = `https://neupokoev.xyz/images/preview.jpg`
+const siteImageUrl = `${siteUrl}/images/preview.jpg`
 const siteImageAlt = `A pink printed circuit board (PCB) design made in Autodesk Fusion 360.
 The board looks like an Arduino shield with some connectors on it. 
 The board is designed for connecting DC motors and sensors to Arduino board.`
-const defaultImage = `https://neupokoev.xyz/images/image-7.jpg`
+const defaultImage = `${siteUrl}/images/image-7.jpg`
 const defaultImageAlt = `Probably no text description for this placeholder picture, but I will work on that`
 
 export const SEO = ({ children, title, path, frontmatter, pageContext }) => {
   const metaType = `website`
-  const lang = path.startsWith("/ru") ? "ru" : "en"
+  const lang = "ru"
   const pagination = !!pageContext?.baseUrl // noindex, canonical to main
   const sourceMarkdown = !!frontmatter // other source - JS pages
 
@@ -29,16 +29,10 @@ export const SEO = ({ children, title, path, frontmatter, pageContext }) => {
     imageAlt = frontmatter.featuredImageAlt || defaultImageAlt
   }
 
-  let root = removeHtmlExtension(path) === "/"
-  let siteName = `N Tech Lab`
-  let rootTitle = `Robots, science, gamedev`
-  let author = `Nikolay Neupokoev`
-  if (lang === `ru`) {
-    root = removeTrailingSlash(removeHtmlExtension(path)) === "/ru"
-    siteName = `Лаборатория Н`
-    rootTitle = `Наука, мастерская, девлог`
-    author = `Николай Неупокоев`
-  }
+  const root = removeHtmlExtension(path) === "/"
+  const siteName = `Лаборатория Н`
+  const rootTitle = `Наука, мастерская, девлог`
+  const author = `Николай Неупокоев`
   
   let url = siteUrl
   if (pagination) {
