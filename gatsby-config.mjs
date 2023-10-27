@@ -18,7 +18,7 @@ const config = {
     description: `Наука, мастерская, девлог`,
     author: `@mikolasan`,
   },
-  trailingSlash: `ignore`,
+  trailingSlash: `always`,
   flags: {
     DEV_SSR: true,
     FAST_DEV: true,

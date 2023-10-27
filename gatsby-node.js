@@ -33,8 +33,6 @@ exports.onCreatePage = ({ page, actions }) => {
   // fix "no trailing slash" for GitHub pages
   // exceptions
   const addTrailingSlash = [
-    `/blog/how-windows-web-developers-fix-websites-in-safari/`,
-    `/ideas/web-app/`
   ]  
   const newPath = nifty.addHtmlToPath(oldPath)
   if (oldPath !== "/" && oldPath !== "/404" && newPath !== oldPath) {
@@ -67,6 +65,7 @@ exports.onCreatePage = ({ page, actions }) => {
         ...page.context,
       },
     })
+    deletePage(page)
   }
 
   // restore old pages that already in the index
