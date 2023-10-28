@@ -6,6 +6,7 @@ import { SEO } from "./../../components/seo"
 
 const RuParanormal = ({ data, pageContext }) => (
   <Layout
+    mainConf="list"
     title={pageContext.title}
     section="paranormal"
     crumbs={pageContext.breadcrumb.crumbs}

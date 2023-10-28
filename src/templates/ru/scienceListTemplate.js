@@ -6,6 +6,7 @@ import { SEO } from "./../../components/seo"
 
 const RuScience = ({ data, pageContext }) => (
   <Layout
+    mainConf="list"
     title={pageContext.title}
     section="neural-networks"
     crumbs={pageContext.breadcrumb.crumbs}

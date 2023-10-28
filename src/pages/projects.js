@@ -4,6 +4,7 @@ import { SEO } from "../components/seo"
 
 const Projects = ({ data }) => (
   <Layout
+    mainConf="list"
     title="Проекты"
     section="projects"
     languageName="Switch to english version"

@@ -5,6 +5,7 @@ import * as styles from "./about.module.css"
 
 const RuAbout = ({ pageContext }) => (
   <Layout
+    mainConf="list"
     title="О себе"
     section="about"
     crumbs={pageContext.breadcrumb.crumbs}

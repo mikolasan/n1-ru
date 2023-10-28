@@ -4,6 +4,7 @@ import { SEO } from "../components/seo"
 
 const Credits = ({ pageContext }) => (
   <Layout
+    mainConf="list"
     title="Credits"
     section="about"
     crumbs={pageContext.breadcrumb.crumbs}

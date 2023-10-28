@@ -6,6 +6,7 @@ import { SEO } from "./../../components/seo"
 
 const RuDevlog = ({ data, pageContext }) => (
   <Layout
+    mainConf="list"
     title={pageContext.title}
     section="devlog"
     crumbs={pageContext.breadcrumb.crumbs}

@@ -3,49 +3,77 @@ import { graphql } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 import Layout from "../../components/ru/layout"
 import DraftAlert from "../../components/draftAlert"
+import PrevNextPagination from "../../components/prevNextPagination"
 import { SEO } from "./../../components/seo"
 
-export default function Template ({ data, pageContext }) {
+export default function Template({ data, pageContext }) {
   const { markdownRemark } = data
-  const { frontmatter, html, excerpt } = markdownRemark
+  const { frontmatter, html, excerpt, tableOfContents } = markdownRemark
   const image = getImage(frontmatter.featuredImage);
   const url = pageContext.url
-  let section = url.substring(1, url.indexOf('/', 1))
-  let languageName = "Switch to russian version"
-  let anotherLanguageLink = '/ru'
-  if (url.startsWith('/ru/')) {
-    languageName = "Switch to english version"
-    anotherLanguageLink = '/'
-    if (url.startsWith('/ru/make/hydroponics')) {
-      section = 'hydroponics'
-    } else {
-      section = url.substring(4, url.indexOf('/', 4))
+  let section
+  if (url.startsWith('/make/hydroponics')) {
+    section = 'hydroponics'
+  } else {
+    let endPos = url.length
+    const firstSlashPos = url.indexOf('/', 1)
+    if (firstSlashPos > -1) {
+      endPos = firstSlashPos
     }
+    section = url.substring(1, endPos)
   }
+
+  let published = frontmatter.published || frontmatter.date
+  let lastModified = frontmatter.lastModified || frontmatter.date
+  // date fixes
+  const lastModifiedDate = new Date(lastModified)
+  const publishedDate = new Date(published)
+  if (published && lastModified && lastModifiedDate < publishedDate) {
+    [published, lastModified] = [lastModified, published];
+  }
+  if (lastModified === published) {
+    lastModified = null
+  }
+  const banner = [
+    <h1 key="title" id="_name1" itemProp="name">{frontmatter.title}</h1>,
+    <p key="content" dangerouslySetInnerHTML={{ __html: frontmatter.subtitle }} />
+  ]
+  
   return (
     <Layout
       title={frontmatter.title}
       description={excerpt}
-      published={frontmatter.date}
-      lastUpdated={frontmatter.lastModified}
-      section={section}
+      published={published}
+      lastUpdated={lastModified}
+      section={frontmatter.section || section}
       showLikes={pageContext.showLikes}
+      slug={pageContext.url}
       crumbs={pageContext.breadcrumb.crumbs}
-      languageName={languageName}
-      anotherLanguageLink={anotherLanguageLink}
+      languageName=""
+      anotherLanguageLink=""
       buttonText={frontmatter.buttonText}
       buttonLink={frontmatter.buttonLink}
       secondButtonText={frontmatter.secondButtonText}
       secondButtonLink={frontmatter.secondButtonLink}
       featuredImage={image}
-      bannerParagraph={[
-        <h1>{frontmatter.title}</h1>,
-        <p dangerouslySetInnerHTML={{ __html: frontmatter.subtitle }} />
-      ]}
+      bannerParagraph={banner}
+      tableOfContents={tableOfContents}
+      recentArticles={pageContext.recentArticles}
     >
       {frontmatter.draft && <DraftAlert linkPath={url} />}
-      <div
-        dangerouslySetInnerHTML={{ __html: html }}
+      <span 
+        itemScope={true}
+        itemType="http://schema.org/Article"
+        itemRef="_name1 _datePublished3"
+      >
+        <div id="_articleBody4" itemProp="articleBody"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
+      </span>
+      <PrevNextPagination
+        prevPage={pageContext.previous}
+        nextPage={pageContext.next}
+        currentPagePath={url}
       />
     </Layout>
   )

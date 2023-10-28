@@ -4,6 +4,7 @@ import { SEO } from "../components/seo"
 
 const IdeasPage = () => (
   <Layout
+    mainConf="list"
     title="Идеи"
     section="ideas"
     languageName="Switch to english version"

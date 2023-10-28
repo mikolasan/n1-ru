@@ -6,11 +6,13 @@ import { SEO } from "./../../components/seo"
 
 const RuBlogIndex = ({ data, pageContext }) => (
   <Layout
+    mainConf="list"
     title={pageContext.title}
-    section="blog"
+    section={pageContext.section}
+    subsection={pageContext.subsection}
     crumbs={pageContext.breadcrumb.crumbs}
-    languageName="Switch to english version"
-    anotherLanguageLink="/blog"
+    languageName=""
+    anotherLanguageLink=""
     bannerParagraph={[
       <h1>Остальное</h1>,
       <p>А всё остальное, что пишется в блоге – остается в этом блоге</p>
@@ -18,7 +20,7 @@ const RuBlogIndex = ({ data, pageContext }) => (
   >
     <PostList
       posts={data.allMarkdownRemark.edges}
-      baseUrl="/blog"
+      baseUrl={pageContext.baseUrl}
       pageContext={pageContext}
     />
   </Layout>
@@ -41,6 +43,20 @@ export const query = graphql`
           frontmatter {
             title
             date
+            tags
+            previewImage {
+              childImageSharp {
+                gatsbyImageData(
+                  layout: FULL_WIDTH,
+                  breakpoints: [278],
+                  transformOptions: {
+                    cropFocus: ATTENTION,
+                    fit: COVER
+                  },
+                  quality: 70
+                )
+              }
+            }
           }
           excerpt
           fileAbsolutePath

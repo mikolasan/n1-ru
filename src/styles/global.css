@@ -113,6 +113,7 @@ section {
 }
 
 .time-block time {
+  display: inline-block;
   font-weight: 100;
 }
 

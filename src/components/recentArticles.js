@@ -6,7 +6,7 @@ import * as styles from "./recentArticles.module.css"
 const RecentArticles = ({ nodes, section, subsection }) => {
   return nodes && (
     <aside className={styles.recentarticles}>
-      <h2>Recently posted in "{section}"</h2>
+      <h2>Недавние посты в "{section}"</h2>
       <div className={styles.blogcards}>
         {nodes.map(node => (
           <BlogPreview
@@ -15,7 +15,7 @@ const RecentArticles = ({ nodes, section, subsection }) => {
             title={node.frontmatter.title}
             text={node.excerpt}
             date={formatDate(node.frontmatter.date)}
-            readMore="Read more..."
+            readMore="Читать..."
           />
         ))}
       </div>

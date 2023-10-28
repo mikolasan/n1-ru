@@ -5,6 +5,7 @@ import * as styles from "./index.module.css"
 
 const RuIndex = ({ pageContext }) => (
   <Layout
+    mainConf="list"
     title="Лаборатория Н"
     section="root"
     crumbs={pageContext.breadcrumb.crumbs}

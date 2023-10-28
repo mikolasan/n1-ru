@@ -6,6 +6,7 @@ import { SEO } from "./../../components/seo"
 
 const RuMake = ({ data, pageContext }) => (
   <Layout
+    mainConf="list"
     title={pageContext.title}
     section="make"
     crumbs={pageContext.breadcrumb.crumbs}
