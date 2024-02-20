@@ -1,5 +1,5 @@
 import React from "react"
-import { removeHtmlExtension, removeTrailingSlash } from "../nifty"
+import { removeHtmlExtension, addTrailingSlash } from "../nifty"
 
 const siteUrl = `https://ru.neupokoev.xyz`
 const siteDescription = `Magazine, blog and knowledge base for embedded engineers, game developers and geeks`
@@ -47,7 +47,7 @@ export const SEO = ({ children, title, path, frontmatter, pageContext }) => {
     title += ` - ${siteName}`
   }
 
-  const canonicalUrl = removeTrailingSlash(removeHtmlExtension(url))
+  const canonicalUrl = addTrailingSlash(removeHtmlExtension(url))
   
   // property = RDF / HTML5
   // itemProp = Microdata

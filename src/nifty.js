@@ -28,6 +28,14 @@ const removeTrailingSlash = str => {
   }
 }
 
+const addTrailingSlash = str => {
+  if (str.charAt(str.length - 1) === '/') {
+    return str;
+  } else {
+    return str + '/';
+  }
+}
+
 const addHtmlToPath = path => path.endsWith(".html") ? path : `${path}.html`
 
 const removeHtmlExtension = path => 
@@ -42,3 +50,4 @@ exports.addHtmlToPath = addHtmlToPath;
 exports.formatDate = formatDate;
 exports.removeHtmlExtension = removeHtmlExtension;
 exports.removeTrailingSlash = removeTrailingSlash;
+exports.addTrailingSlash = addTrailingSlash;
